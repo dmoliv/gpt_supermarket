@@ -49,3 +49,14 @@ plt.title('Vendas por Categoria')
 plt.xlabel('Categoria')
 plt.ylabel('Vendas')
 plt.show()
+
+# %%
+# Vendas ao longo do tempo
+
+df['Order Date'] = pd.to_datetime(df['Order Date'], format='%d-%m-%Y')
+vendas_tempo = df.groupby('Order Date')['Sales'].sum()
+vendas_tempo.plot(kind='line')
+plt.title('Vendas ao Longo do Tempo')
+plt.xlabel('Data')
+plt.ylabel('Vendas')
+plt.show()
