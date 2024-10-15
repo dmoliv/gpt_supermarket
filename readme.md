@@ -12,3 +12,6 @@ De que coisas você precisa para instalar o software e como instalá-lo?
 - Dataset supermarket sales:
 https://www.kaggle.com/datasets/ishanshrivastava28/superstore-sales
 
+- Instalar Python
+
+- Instalar biblioteca pandas e matplotlib
